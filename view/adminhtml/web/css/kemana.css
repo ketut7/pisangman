@@ -1,0 +1,25 @@
+/**
+ * Kemana Core Modules
+ * Copyright (C) 2018 PT. Kemana Teknologi Solusi.
+ *
+ * @author   Rizal Fauzie <rfridwan@kemana.com>
+ * @since    1.0.0
+ */
+
+@font-face{font-family:KemanaFont;src:url(../fonts/KemanaFont.eot?t82yfb);src:url(../fonts/KemanaFont.eot?t82yfb#iefix) format('embedded-opentype'),url(../fonts/KemanaFont.ttf?t82yfb) format('truetype'),url(../fonts/KemanaFont.woff?t82yfb) format('woff'),url(../fonts/KemanaFont.svg?t82yfb#KemanaFont) format('svg');font-weight:400;font-style:normal}.kicon{font-family:KemanaFont!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.kicon.kemana-k:before{content:"\e900"}.kicon.kemana-k-box:before{content:"\e901"}.kicon.kemana-k-inv:before{content:"\e902"}.kicon.kemana-logo:before{content:"\e903"}
+
+body.kemana-admin .admin__menu li#menu-kemana-core-menu.level-0 > a:before {
+    font-family: "KemanaFont";
+    content:"\e901";
+    font-size: 2.6rem;
+    margin-bottom: .8rem;
+}
+
+i.kemana-sysconficon {
+    color: #1a4d92;
+    font-size: 2.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -3px;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Kemana Admini - Backend
+ * Copyright (C) 2017 Kemana Solutions.
+ *
+ * @author   Rizal Fauzie <rizal@fauzie.my.id>
+ * @since    1.0.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="kemana" sortOrder="0">
+			<label><![CDATA[<i class="kicon kemana-k-inv kemana-sysconficon"></i> Kemana Extensions]]></label>
+		</tab>
+		<section id="kemanacore" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="99999" translate="label">
+			<label>Admin Settings</label>
+			<tab>kemana</tab>
+			<resource>Kemana_Core::config</resource>
+			<group id="general" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+				<label>Admin Backend Styles</label>
+				<field id="admin_title" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="text">
+					<label>Default Admin Title</label>
+				</field>
+				<field id="uisize" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+					<label>Admin UI Size</label>
+                    <source_model>Kemana\Core\Model\Config\Source\UiSize</source_model>
+                    <comment><![CDATA[<script type="text/javascript">
+require(['jquery'], function($) {
+    var $mainField = $('select#kemanacore_general_uisize');
+    $mainField.change(function() {
+        var size = $mainField.val();
+        if ($('#kemanacss').length) $('#kemanacss').remove();
+        if (size) {
+            switch(size) {
+                case 'huge':
+                    $('html').css('font-size', '65%');
+                    $('body').css('font-size', '1.4rem');
+                    break;
+                case 'large':
+                    $('html').css('font-size', '62.5%');
+                    $('body').css('font-size', '1.4rem');
+                    break;
+                case 'medium':
+                    $('html').css('font-size', '60%');
+                    $('body').css('font-size', '1.2rem');
+                    break;
+                case 'small':
+                    $('html').css('font-size', '57.5%');
+                    $('body').css('font-size', '1.2rem');
+                    break;
+                case 'xsmall':
+                    $('html').css('font-size', '55%');
+                    $('body').css('font-size', '1.1rem');
+                    break;
+            }
+        } else {
+            $('html,body').attr('style', '');
+        }
+    })
+});
+</script>]]></comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

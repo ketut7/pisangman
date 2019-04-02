@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Kemana Core Modules
+ * Copyright (C) 2018 PT. Kemana Teknologi Solusi.
+ *
+ * @author   Rizal Fauzie <rfridwan@kemana.com>
+ * @since    1.0.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<kemanacore>
+			<general>
+				<uisize>large</uisize>
+			</general>
+		</kemanacore>
+	</default>
+</config>

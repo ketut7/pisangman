@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Kemana Admini - Backend
+ * Copyright (C) 2017 Kemana Solutions.
+ *
+ * @author   Rizal Fauzie <rizal@fauzie.my.id>
+ * @since    1.0.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+        <add id="Kemana_Core::menu" title="Kemana" translate="title" module="Kemana_Core" sortOrder="69" resource="Kemana_Core::menu"/>
+		<add action="adminhtml/system_config/edit/section/kemanacore" id="Kemana_Core::config_menu" module="Kemana_Core" parent="Kemana_Core::menu" resource="Kemana_Core::config_menu" sortOrder="99999" title="Admin Settings"/>
+	</menu>
+</config>

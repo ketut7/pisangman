@@ -1,0 +1,23 @@
+{
+    "name": "kemana/module-core",
+    "description": "Magento 2 backend for all kemana modules.",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "email": "rfridwan@kemana.com",
+            "name": "Rizal Fauzie Ridwan"
+        }
+    ],
+    "require": {
+        "magento/framework": "*",
+        "magento/module-backend": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kemana\\Core\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

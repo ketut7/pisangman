@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Kemana Admini - Backend
+ * Copyright (C) 2017 Kemana Solutions.
+ *
+ * @author   Rizal Fauzie <rizal@fauzie.my.id>
+ * @since    1.0.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+                <resource id="Kemana_Core::menu" title="Kemana Menu" translate="title" sortOrder="69">
+                    <resource id="Kemana_Core::config_menu" sortOrder="99999" translate="title" title="Admin Settings"/>
+                </resource>
+                <resource id="Magento_Backend::stores">
+					<resource id="Magento_Backend::stores_settings">
+						<resource id="Magento_Config::config">
+							<resource id="Kemana_Core::config" sortOrder="10" title="Admin Settings"/>
+						</resource>
+					</resource>
+				</resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

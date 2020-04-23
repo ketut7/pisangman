@@ -11,6 +11,7 @@ This module is used for root menu backend and tab menu in system config. Some mo
 
 #### Changelog
 
+[2.0.0] Css changes for M 2.3.4
 [1.0.0] Initial module creation
 
 ---

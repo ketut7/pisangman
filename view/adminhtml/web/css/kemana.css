@@ -15,11 +15,16 @@ body.kemana-admin .admin__menu li#menu-kemana-core-menu.level-0 > a:before {
     margin-bottom: .8rem;
 }
 
-i.kemana-sysconficon {
-    color: #1a4d92;
-    font-size: 2.2rem;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 3px;
-    margin-top: -3px;
+.kemana-logo div.admin__page-nav-title{
+    background-image: url('Kemana_Core::images/kemana-logo.svg') !important;
+    background-repeat: no-repeat !important;
+    background-size: 100px !important;
+    background-position: 20px 10px !important;
+    display: block;
+    line-height: 20px;
+    padding-left: 130px;
+    font-style: italic;
+    text-transform: none;
+    font-size: 20px;
+    font-family: "KemanaFont";
 }

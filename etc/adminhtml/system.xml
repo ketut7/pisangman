@@ -10,9 +10,9 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
 	<system>
-		<tab id="kemana" sortOrder="0">
-			<label><![CDATA[<i class="kicon kemana-k-inv kemana-sysconficon"></i> Kemana Extensions]]></label>
-		</tab>
+        <tab id="kemana" class="kemana-logo" sortOrder="50">
+            <label>Extensions</label>
+        </tab>
 		<section id="kemanacore" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="99999" translate="label">
 			<label>Admin Settings</label>
 			<tab>kemana</tab>
